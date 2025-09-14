@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../web2.jpg');
+    /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    /* Increased border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    /* Apply a blur effect */
+    margin-top: 20px;
+    /* Added margin for better spacing */
+}
+
+.user-icon img {
+    max-width: 90px;
+    /* Adjust the max-width to your desired size */
+    max-height: 90px;
+    /* Adjust the max-height to your desired size */
+    border-radius: 60%;
+    /* Optional: Make the image circular */
+    margin-left: 125px;
+}
+
+h2 {
+    display: block;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right,
+            #02515b,
+            #4092e4,
+            #307bdd,
+            #2bb673);
+    color: transparent;
+    font-family: 'Comic Neue';
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Comic Neue';
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    background-image: linear-gradient(to right,
+            #02515b,
+            #4092e4,
+            #307bdd,
+            #2bb673);
+    color: transparent;
+    font-family: 'Comic Neue';
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Comic Neue';
+    margin: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+input {
+    width: calc(100% - 20px);
+    /* Adjusted width to leave room for padding */
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+    /* Display input boxes inline */
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    /* Rounded corners for input boxes */
+    outline: none;
+}
+
+.bn632-hover {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 20px;
+    margin-left: 100px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+    outline: none;
+}
+
+.bn632-hover.bn18 {
+    background-image: linear-gradient(to right,
+            #25cbe1,
+            #4092e4,
+            #307bdd,
+            #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
