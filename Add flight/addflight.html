@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="addflight.css">
+  <title>Add Flight</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Add Flight</h1>
+
+    <form id="flightForm" action="add_flight.php" method="POST">
+      <input type="text" id="name" name="name" required placeholder="Flight Name">
+      <!-- <input type="text" id="id" name="id" required placeholder="Flight ID"> -->
+      <input type="text" id="itinerary" name="itinerary" required placeholder="Flight Itinerary">
+      <input type="text" id="fees" name="fees" required placeholder="Flight Fees">
+      <input type="number" id="passengers" name="passengers" required placeholder="Number of Passengers">
+
+      <input type="date" id="departureDate" name="departureDate" required>
+
+      <div class="flight-time">
+        <label for="Takeoff">Takeoff:</label>
+        <input type="time" id="takeoff" name="takeoff" required>
+      </div>
+
+      <div class="flight-time">
+        <label for="takeoff">Landing:</label>
+        <input type="time" id="landing" name="landing" required>
+      </div>
+
+
+
+      <button type="submit" class="bn632-hover bn18">Add Flight</button>
+    </form>
+  </div>
+
+
+
+
+</body>
+
+</html>
