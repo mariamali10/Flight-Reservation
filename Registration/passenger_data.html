@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="passData.css">
+    <title>Passenger Additional Data</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Passenger Additional Data</h1>
+
+        <form action="additional_data.php" method="post" enctype="multipart/form-data">
+            <label for="passengerImage">Enter Your Image:</label>
+            <input type="file" id="passengerImage" name="passengerImage" required>
+            <br>
+            <label for="passportImage">Enter Your Passport Image:</label>
+            <input type="file" id="passportImage" name="passportImage" required>
+            <br>
+            <label for="accountBalance">Enter Your Account Balance:</label>
+            <input type="number" id="accountBalance" name="accountBalance" required placeholder="Account Balance">
+
+            <!-- Include the user type to distinguish between customer and company -->
+            <input type="hidden" name="userType" value="customer">
+
+            <button type="submit" class="bn632-hover bn18">Save Data</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

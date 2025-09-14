@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+  font-family: Arial, sans-serif, Comic Neue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../web2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px;
+  /* Increased border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  /* Apply a blur effect */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: calc(100% - 20px);
+  /* Adjusted width to leave room for padding */
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  /* Display input boxes inline */
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  /* Rounded corners for input boxes */
+  outline: none;
+}
+
+/* Style for file input */
+/* input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1.5px solid #2196F3;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #2196F3;
+  transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+} */
+
+input[type="file"]:hover {
+  border-color: #1565C0;
+  color: #1565C0;
+  -o-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+input[type="file"]:focus {
+  border-color: #0b7dda;
+  color: #0b7dda;
+  background-color: #f0f0f0;
+}
+
+/* Reset default browser styles for file input */
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+  display: none;
+}
+
+/* Style for file input label */
+input[type="file"]::before {
+  content: 'Choose File';
+  display: inline-block;
+  background: linear-gradient(to right,
+      #25cbe1,
+      #4092e4,
+      #307bdd,
+      #2bb673);
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 12px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="file"]:hover::before {
+  background: linear-gradient(to right,
+      #25cbe1,
+      #4092e4,
+      #307bdd,
+      #2bb673);
+}
+
+button {
+  background-color: #2196F3;
+  /* Blue color */
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 80%;
+  transition: background-color 0.3s;
+  /* Transition for background color */
+}
+
+button:hover {
+  background-color: #1565C0;
+  /* Darker blue on hover */
+}
+
+label[for="customer"],
+label[for="company"] {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  width: 16px;
+  /* Adjusted width for normal size */
+  height: 16px;
+  /* Adjusted scale for normal size */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+h1 {
+  background-image: linear-gradient(to right,
+      #25cbe1,
+      #4092e4,
+      #307bdd,
+      #2bb673);
+  color: transparent;
+  font-family: 'Comic Neue';
+  padding-bottom: 20px;
+  margin: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bn632-hover {
+  width: 140px;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  height: 45px;
+  text-align: center;
+  margin-left: 100px;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 20px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn18 {
+  background-image: linear-gradient(to right,
+      #25cbe1,
+      #4092e4,
+      #307bdd,
+      #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190)
+}
