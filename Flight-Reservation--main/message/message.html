@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Messages with a Company</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contacs Us</h1>
+
+    <div id="messageList" class="chat-container">
+      <!-- Display messages with the company here -->
+      <div class="message company">
+        <p class="sender">Jasmine</p>
+        <p class="message-content">Hello! How can we assist you?</p>
+      </div>
+
+      <!-- User's message -->
+      <div class="message user">
+        <p class="sender">You</p>
+        <p class="message-content">Thank you for reaching out. I have a question about...</p>
+      </div>
+      <!-- Add more messages as needed -->
+    </div>
+
+    <form id="messageForm" onsubmit="sendMessage(); return false;">
+      <input type="text" id="newMessage" name="newMessage" required placeholder="Type your message...">
+      <button type="submit" class="bn632-hover bn18">Send</button>
+    </form>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const newMessageInput = document.getElementById('newMessage');
+      const messageList = document.getElementById('messageList');
+
+      // Get the value of the new message
+      const newMessageContent = newMessageInput.value.trim();
+
+      // Don't send empty messages
+      if (newMessageContent === '') {
+        return;
+      }
+
+      // Determine the sender type (user or company)
+      const senderType = 'user'; // You can change this dynamically based on the sender
+
+      // Create a new message element
+      const newMessageElement = document.createElement('div');
+      newMessageElement.classList.add('message', senderType);
+      newMessageElement.innerHTML = `
+        <p class="sender">${senderType === 'company' ? 'Company Name' : 'You'}</p>
+        <p class="message-content">${newMessageContent}</p>
+        <p class="timestamp">Sent on: ${getCurrentTimestamp()}</p>
+      `;
+
+      // Append the new message to the message list
+      messageList.appendChild(newMessageElement);
+
+      // Clear the input field
+      newMessageInput.value = '';
+    }
+
+    function getCurrentTimestamp() {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+      return now.toLocaleDateString('en-US', options);
+    }
+  </script>
+
+</body>
+</html>

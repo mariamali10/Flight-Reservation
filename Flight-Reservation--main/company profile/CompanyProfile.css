@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+  font-family: Arial, sans-serif, Comic Neue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../web2.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px; /* Increased border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px); /* Apply a blur effect */
+}
+
+h1 {
+    background-image: linear-gradient(
+        to right,
+        #25cbe1,
+        #4092e4,
+        #307bdd,
+        #2bb673
+    );
+    color: transparent;
+    font-family: 'Comic Neue', sans-serif;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+#companyProfile {
+  text-align: center;
+}
+
+#logo {
+    max-width: 50%; /* Adjust the percentage as needed */
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+div, ul {
+  margin-bottom: 16px;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+
+  .bn632-hover {
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 20px;
+    margin-left: 10px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn18 {
+    background-image: linear-gradient(
+      to right,
+        #25cbe1,
+        #4092e4,
+        #307bdd,
+        #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  }

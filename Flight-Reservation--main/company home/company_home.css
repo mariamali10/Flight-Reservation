@@ -1,0 +1,173 @@
+/* company_style.css */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+  font-family: Arial, sans-serif, Comic Neue;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('../web2.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.ff {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 15px; /* Increased border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 800px; /* Adjusted max-width for larger container */
+  box-sizing: border-box;
+  backdrop-filter: blur(8px); /* Apply a blur effect */
+  margin-top: 20px; /* Added margin for better spacing */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 100px; /* Adjusted max-width for the company logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2196F3;
+}
+
+#flightsList {
+  margin-top: 20px; /* Added margin for better spacing */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px; /* Added margin for better spacing */
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px; /* Added margin for better spacing */
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+#flightDetails {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 15px;
+    border-radius: 15px; /* Increased border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+}
+
+#flightDetails.hidden {
+  display: none;
+}
+
+/* Modern styles for View Details button */
+.viewDetailsBtn {
+    background-image: linear-gradient(
+        to right,
+        #25cbe1,
+        #4092e4,
+        #307bdd,
+        #2bb673
+    );
+  color: transparent;
+  color: white; /* White text color */
+  padding: 10px 15px; /* Padding for better visual appearance */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.viewDetailsBtn:hover {
+    background-image: linear-gradient(
+        to right,
+        #1ca0b1,
+        #2e69a4,
+        #2262b6,
+        #1f8e58
+    );}
+
+/* Modern styles for Cancel Flight button */
+.cancelFlightBtn {
+  background-color: #e74c3c; /* Red background color */
+  color: white; /* White text color */
+  padding: 10px 15px; /* Padding for better visual appearance */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.cancelFlightBtn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+h1 {
+    background-image: linear-gradient(
+        to right,
+        #25cbe1,
+        #4092e4,
+        #307bdd,
+        #2bb673
+    );
+    color: transparent;
+    font-family: 'Comic Neue';
+    padding-top: 5px;
+    margin: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }

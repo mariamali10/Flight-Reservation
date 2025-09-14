@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Flight Info</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Flight Info</h1>
+
+    <div id="flightDetails">
+      <p>Flight Name: ABC Airlines</p>
+      <p>Flight ID: FL123</p>
+      <p>Itinerary: City A to City B</p>
+      <p>Fees: $200</p>
+      <p>Number of Passengers: 150</p>
+      <p>Takeoff Time: 12:00 PM</p>
+      <p>Landing Time: 2:00 PM</p>
+    </div>
+
+    <div id="takeItOption">
+      <p>Take it?</p>
+      <button class="bn632-hover bn18">Pay from Account</button>
+      <button class="bn632-hover bn18">Cash</button>
+      <button class="bn632-hover bn18">Message Us</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var messageUsButton = document.querySelector('#takeItOption .bn632-hover.bn18:last-child'); // Select the last button (Message Us)
+
+      messageUsButton.addEventListener('click', function() {
+        window.open('/message/message.html', '_blank');
+      });
+    });
+  </script>
+
+</body>
+</html>

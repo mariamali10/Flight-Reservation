@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CompanyProfile.css">
+  <title>Company Profile</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 style="color: #1c7ac7; font-family: 'Comic Neue', sans-serif;">About Us</h1>
+
+    <form action="/submit" method="post">
+      <div id="companyProfile">
+        <img src="../company_logo.png" alt="Company Logo" id="logo">
+
+        <label for="companyName">Imagine Flights</label>
+
+        <label for="companyBio">Bio:</label>
+        <textarea id="companyBio" name="companyBio" rows="7"
+          cols="50">Imagine Flights is not just a flight booking website; it's your trusted travel companion. We are dedicated to providing you with a user-friendly interface, extensive flight options, and unbeatable prices. Our commitment to excellence extends beyond the booking process, ensuring your entire journey is smooth and memorable.</textarea>
+
+        <label for="companyAddress">Address:</label>
+        <textarea id="companyAddress" name="companyAddress" rows="1" cols="50">45 Maadi Nerco, Cairo, Egypt</textarea>
+
+        <label for="flightsList">Flights List:</label>
+        <ul id="flightsList">
+          <li>Flight 1</li>
+          <li>Flight 2</li>
+          <li>Flight 3</li>
+        </ul>
+
+        <button type="submit" class="bn632-hover bn18">Edit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

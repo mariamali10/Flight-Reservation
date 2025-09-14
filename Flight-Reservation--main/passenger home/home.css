@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+    font-family: Arial, sans-serif, Comic Neue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../web2.jpg');
+    /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    /* Increased border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    /* Adjusted max-width for larger container */
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    /* Apply a blur effect */
+    margin-top: 20px;
+    /* Added margin for better spacing */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 100px;
+    /* Adjusted max-width for the passenger avatar */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2196F3;
+}
+
+#flightsList {
+    margin-top: 20px;
+    /* Added margin for better spacing */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    /* Added margin for better spacing */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    /* Added margin for better spacing */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
